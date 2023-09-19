@@ -3,6 +3,7 @@ import { useCallback } from 'react';
 const URL = "http://openlibrary.org/search.json?title=";
 const AppContext = React.createContext();
 
+// eslint-disable-next-line react/prop-types
 const AppProvider = ({children}) => {
     const [searchTerm, setSearchTerm] = useState("the lost world");
     const [books, setBooks] = useState([]);
