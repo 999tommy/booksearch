@@ -11,9 +11,9 @@ import { AppProvider } from './context.';
 
 const App = () => {
   return (
-    <div>
+    <>
         <AppProvider>
-    <BrowserRouter>
+       <BrowserRouter>
       <Routes>
         <Route path = "/" element = {<Home />} />
           <Route path = "about" element = {<About />} />
@@ -23,7 +23,7 @@ const App = () => {
       </Routes>
     </BrowserRouter>
     </AppProvider>
-    </div>
+    </>
   )
 }
 
